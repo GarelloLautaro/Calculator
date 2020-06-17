@@ -3,7 +3,8 @@ var operandoB
 var operacion
 
 function getElement() {
-    resultado = document.getElementById("result");
+    cuenta = document.getElementById("operation");
+    resultado = document.getElementById("result")
     cero = document.getElementById("n0")
     uno = document.getElementById("n1")
     dos = document.getElementById("n2")
@@ -19,60 +20,86 @@ function getElement() {
     menos = document.getElementById("nS")
     multiplicacion = document.getElementById("nM")
     division = document.getElementById("nD")
+    igual = document.getElementById("equal")
 }
 
 function onClick() {
     cero.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "0"
+        cuenta.textContent = cuenta.textContent + "0"
     }
 
     uno.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "1"
+        cuenta.textContent = cuenta.textContent + "1"
     }
 
     dos.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "2"
+        cuenta.textContent = cuenta.textContent + "2"
     }
 
     tres.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "3"
+        cuenta.textContent = cuenta.textContent + "3"
     }
 
     cuatro.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "4"
+        cuenta.textContent = cuenta.textContent + "4"
     }
 
     cinco.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "5"
+        cuenta.textContent = cuenta.textContent + "5"
     }
 
     seis.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "6"
+        cuenta.textContent = cuenta.textContent + "6"
     }
 
     siete.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "7"
+        cuenta.textContent = cuenta.textContent + "7"
     }
 
     ocho.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "8"
+        cuenta.textContent = cuenta.textContent + "8"
     }
 
     nueve.onclick = function (e) {
-        resultado.textContent = resultado.textContent + "9"
+        cuenta.textContent = cuenta.textContent + "9"
     }
 
     ce.onclick = function (e) {
         resetear()
     }
+
+    mas.onclick = function (e) {
+        operandoA = cuenta.textContent
+        operacion = "+"
+        limpiar()
+    }
+    menos.onclick = function (e) {
+        operandoA = cuenta.textContent
+        operacion = "-"
+        limpiar()
+    }
+    division.onclick = function (e) {
+        operandoA = cuenta.textContent
+        operacion = "/"
+        limpiar()
+    }
+    multiplicacion.onclick = function (e) {
+        operandoA = cuenta.textContent
+        operacion = "x"
+        limpiar()
+    }
+    igual.onclick = function (e) {
+        operandoB = cuenta.textContent
+        resolver()
+    }
 }
 
-
 function limpiar() {
-    resultado.textContent = ""
+    cuenta.textContent = ""
 }
 
 function resetear() {
+    cuenta.textContent = ""
     resultado.textContent = ""
     operandoA = 0
     operandoB = 0
@@ -81,6 +108,7 @@ function resetear() {
 
 function resetear() {
 
+    cuenta.textContent = ""
     resultado.textContent = ""
     operandoA = 0
     operandoB = 0

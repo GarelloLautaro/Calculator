@@ -32,25 +32,33 @@
     background-color: white;
 }
 
-.result{
-    display: flex;
-    justify-content: left;
-    font-size: 55px;
-    min-width: 350px;
-    height: 55px;
-    color: black;
-    background-color:white;
-}
-
 .operation{
     display: flex;
     justify-content: left;
     align-items: flex-end;
-    font-size: 30px;
+    font-size: 55px;
     min-width: 350px;
     height: 55px;
     color: black;
     background-color: white;
+}
+
+.result{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 40px;
+    min-width: 350px;
+    height: 55px;
+    color: black;
+    background-color: white;
+}
+
+.resultOperation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 
 .keys {
