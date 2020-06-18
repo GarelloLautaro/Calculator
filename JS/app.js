@@ -109,14 +109,6 @@ function resetear() {
     operacion = ""
 }
 
-function resetear() {
-    cuenta.textContent = ""
-    resultado.textContent = ""
-    operandoA = 0
-    operandoB = 0
-    operacion = ""
-}
-
 function resolver() {
     var res = 0
     switch (operacion) {
