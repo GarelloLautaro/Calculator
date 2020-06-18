@@ -73,11 +73,13 @@ function onClick() {
         operacion = "+"
         limpiar()
     }
+    
     menos.onclick = function (e) {
         operandoA = cuenta.textContent
         operacion = "-"
         limpiar()
     }
+    
     division.onclick = function (e) {
         operandoA = cuenta.textContent
         operacion = "/"
@@ -88,6 +90,7 @@ function onClick() {
         operacion = "x"
         limpiar()
     }
+    
     igual.onclick = function (e) {
         operandoB = cuenta.textContent
         resolver()
@@ -107,7 +110,6 @@ function resetear() {
 }
 
 function resetear() {
-
     cuenta.textContent = ""
     resultado.textContent = ""
     operandoA = 0
