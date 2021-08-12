@@ -2,4 +2,4 @@
 
 ## For LPPA
 
-[Click here](https://garellolautaro.github.io/lppaCalculator/.)
+[Click here](https://garellolautaro.github.io/Calculator/.)
